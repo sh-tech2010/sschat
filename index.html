@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SS Chat - Chat fast. Stay private.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#070B09;color-scheme:dark}
+a{color:#E8F1EC}
+a:hover{color:#2EB88A}
+html{scroll-behavior:smooth}
+.btn{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,border-color .2s ease,filter .2s ease;cursor:pointer}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(-1px)}
+.btn:focus-visible,.foot-link:focus-visible{outline:2px solid #E8F1EC;outline-offset:3px}
+.btn-solid:hover{box-shadow:0 16px 40px rgba(46,184,138,.55)!important;filter:brightness(1.1)}
+.btn-outline:hover{border-color:#2EB88A!important;background-color:#12201A!important}
+.btn-dark:hover{background-color:#000000!important;box-shadow:0 14px 32px rgba(0,0,0,.4)}
+.foot-link{transition:color .2s ease}
+.foot-link:hover{color:#2EB88A!important}
+.chip{position:absolute}
+@media (max-width:900px){
+.hero{padding-top:24px!important;padding-bottom:56px!important;gap:48px!important}
+.sec{padding-top:72px!important;padding-bottom:72px!important}
+}
+@media (max-width:640px){
+.chip{display:none!important}
+.nav-link{display:none!important}
+.hero{gap:40px!important}
+.sec{padding-top:56px!important;padding-bottom:56px!important}
+.band{padding:40px 24px!important;border-radius:24px!important}
+.strip{gap:10px 20px!important;font-size:14px!important}
+.btn{box-sizing:border-box}
+.hero-btns .btn{flex:1 1 100%;justify-content:center}
+.dl-row .btn{width:100%;justify-content:center}
+.cardbox{padding:24px!important;border-radius:20px!important}
+}
+.card{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-5px);border-color:#2EB88A!important;box-shadow:0 18px 44px rgba(46,184,138,.14)}
+</style>
+
+
+</head>
+<body>
+
+
+<div style="position: relative; width: 100%; box-sizing: border-box; background: #070B09; color: #E8F1EC; font-family: 'Inter', system-ui, sans-serif; overflow: hidden">
+
+<!-- DECORATIVE GLOWS -->
+<div aria-hidden="true" style="position: absolute; top: -200px; right: -160px; width: 760px; height: 760px; border-radius: 999px; background: radial-gradient(closest-side, rgba(46, 184, 138, 0.26), rgba(46, 184, 138, 0)); pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; top: 900px; left: -260px; width: 640px; height: 640px; border-radius: 999px; background: radial-gradient(closest-side, rgba(46, 184, 138, 0.12), rgba(46, 184, 138, 0)); pointer-events: none"></div>
+
+<div style="position: relative">
+
+<!-- NAV -->
+<div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<div style="width: 42px; height: 42px; border-radius: 13px; background: #2EB88A; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(46, 184, 138, 0.35)">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06100C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"></path></svg>
+</div>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.01em">SS Chat</span>
+</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a class="nav-link" href="#features" style="text-decoration: none">Features</a>
+<a class="nav-link" href="#access" style="text-decoration: none">Get started</a>
+<a class="btn btn-solid" href="https://www.mediafire.com/file/aza3e5ik0mlbcfe/base.apk/file" target="_blank" rel="noopener" style="text-decoration: none; background: #2EB88A; color: #06100C; padding: 12px 22px; border-radius: 999px; font-weight: 600">Download app</a>
+</nav>
+</div>
+
+<!-- HERO -->
+<div id="top" class="hero" style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 40px 24px 80px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<div style="align-self: flex-start; display: flex; align-items: center; gap: 8px; background: #0F1713; border: 1px solid #22302A; border-radius: 999px; padding: 9px 18px; font-size: 14px; font-weight: 500; color: #B7C7BE">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+Private • Real-time • Instant
+</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(44px, 7vw, 80px); line-height: 1.02; letter-spacing: -0.035em">Welcome to <span style="color: #2EB88A">SS Chat</span></h1>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(20px, 2.4vw, 28px); letter-spacing: -0.01em; color: #E8F1EC">Chat fast. Stay private.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #9DB0A6; max-width: 540px">Fast, reliable messaging with 1-on-1 chats, group rooms, read ticks, Google Drive backup and 24-hour Status updates. Free to use. Download the app and sign in with your Gmail to start chatting.</p>
+<div class="hero-btns" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+<a class="btn btn-solid" href="https://www.mediafire.com/file/aza3e5ik0mlbcfe/base.apk/file" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #2EB88A; color: #06100C; text-decoration: none; font-weight: 600; font-size: 16px; padding: 17px 30px; border-radius: 16px; box-shadow: 0 12px 32px rgba(46, 184, 138, 0.32)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06100C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 11l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+Download app
+</a>
+<a class="btn btn-outline" href="#features" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid #2C3D35; color: #E8F1EC; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 16px">See features</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 6px">
+<span style="font-size: 13px; font-weight: 500; color: #B7C7BE; background: #0F1713; border: 1px solid #22302A; border-radius: 999px; padding: 7px 14px">Free to use</span>
+<span style="font-size: 13px; font-weight: 500; color: #B7C7BE; background: #0F1713; border: 1px solid #22302A; border-radius: 999px; padding: 7px 14px">Sign in with Gmail</span>
+<span style="font-size: 13px; font-weight: 500; color: #B7C7BE; background: #0F1713; border: 1px solid #22302A; border-radius: 999px; padding: 7px 14px">No phone number</span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding-top: 6px">
+<div style="width: 38px; height: 38px; border-radius: 999px; background: #17332A; color: #2EB88A; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px">SS</div>
+<span style="font-size: 15px; color: #9DB0A6">Powered and designed by <strong style="color: #E8F1EC; font-weight: 600">Surya Sen</strong></span>
+</div>
+</div>
+
+<!-- PHONE -->
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: center">
+<div style="position: relative; width: 100%; max-width: 420px; display: flex; justify-content: center">
+
+<div style="width: 100%; max-width: 310px; height: 620px; box-sizing: border-box; background: #1B2621; border-radius: 46px; padding: 10px; border: 1px solid #2C3D35; box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6), 0 0 80px rgba(46, 184, 138, 0.14)">
+<div style="width: 100%; height: 100%; box-sizing: border-box; background: #060A08; border-radius: 36px; overflow: hidden; display: flex; flex-direction: column">
+
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 22px 18px 10px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">SS Chat</span>
+<div style="width: 32px; height: 32px; border-radius: 999px; background: #121A16; display: flex; align-items: center; justify-content: center">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9DB0A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; padding: 6px 18px 14px; border-bottom: 1px solid #22302A">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 5px">
+<div style="width: 46px; height: 46px; box-sizing: border-box; border-radius: 999px; border: 2px solid #2EB88A; padding: 3px"><div style="width: 100%; height: 100%; border-radius: 999px; background: #17332A; color: #2EB88A; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">M</div></div>
+<span style="font-size: 11px; color: #9DB0A6">Mira</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 5px">
+<div style="width: 46px; height: 46px; box-sizing: border-box; border-radius: 999px; border: 2px solid #2EB88A; padding: 3px"><div style="width: 100%; height: 100%; border-radius: 999px; background: #26332D; color: #E8F1EC; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">D</div></div>
+<span style="font-size: 11px; color: #9DB0A6">Dev</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 5px">
+<div style="width: 46px; height: 46px; box-sizing: border-box; border-radius: 999px; border: 2px solid #2EB88A; padding: 3px"><div style="width: 100%; height: 100%; border-radius: 999px; background: #17332A; color: #2EB88A; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">R</div></div>
+<span style="font-size: 11px; color: #9DB0A6">Riya</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 5px">
+<div style="width: 46px; height: 46px; box-sizing: border-box; border-radius: 999px; border: 2px solid #2EB88A; padding: 3px"><div style="width: 100%; height: 100%; border-radius: 999px; background: #26332D; color: #E8F1EC; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">K</div></div>
+<span style="font-size: 11px; color: #9DB0A6">Kabir</span>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px 18px 10px">
+<div style="width: 38px; height: 38px; border-radius: 999px; background: #17332A; color: #2EB88A; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">A</div>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<span style="font-weight: 600; font-size: 14px">Aarav</span>
+<span style="font-size: 12px; color: #2EB88A">Online</span>
+</div>
+</div>
+
+<div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 9px; padding: 0 18px 14px">
+<div style="align-self: flex-start; max-width: 80%; background: #17211C; border-radius: 18px 18px 18px 4px; padding: 10px 14px; font-size: 14px; line-height: 1.4">Hey! Did you try the new app?</div>
+<div style="align-self: flex-end; max-width: 80%; background: #2EB88A; color: #06100C; border-radius: 18px 18px 4px 18px; padding: 10px 14px; font-size: 14px; line-height: 1.4; font-weight: 500">Yes, SS Chat is super smooth.</div>
+<div style="align-self: flex-start; max-width: 80%; background: #17211C; border-radius: 18px 18px 18px 4px; padding: 10px 14px; font-size: 14px; line-height: 1.4">Nice. Sending you the photos now.</div>
+<div style="align-self: flex-end; max-width: 80%; background: #2EB88A; color: #06100C; border-radius: 18px 18px 4px 18px; padding: 10px 14px; font-size: 14px; line-height: 1.4; font-weight: 500">Got them. Thanks!</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px 20px; border-top: 1px solid #22302A">
+<div style="flex: 1; background: #121A16; border-radius: 999px; padding: 11px 16px; font-size: 13px; color: #9DB0A6">Type a message</div>
+<div style="width: 40px; height: 40px; border-radius: 999px; background: #2EB88A; display: flex; align-items: center; justify-content: center">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06100C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FLOATING CHIPS -->
+<div class="chip" style="position: absolute; top: 44px; right: 0; display: flex; align-items: center; gap: 10px; background: #0F1713; border: 1px solid #2C3D35; border-radius: 16px; padding: 10px 14px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5)">
+<div style="width: 32px; height: 32px; border-radius: 10px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 13px; font-weight: 600">App Lock on</span><span style="font-size: 11px; color: #9DB0A6">Your chats stay private</span></div>
+</div>
+
+<div class="chip" style="position: absolute; top: 330px; left: 0; display: flex; align-items: center; gap: 10px; background: #0F1713; border: 1px solid #2C3D35; border-radius: 16px; padding: 10px 14px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5)">
+<div style="width: 32px; height: 32px; border-radius: 10px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6"></path><path d="M12 16l1 1L22 7"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 13px; font-weight: 600">Seen</span><span style="font-size: 11px; color: #9DB0A6">Read ticks</span></div>
+</div>
+
+<div class="chip" style="position: absolute; bottom: 96px; right: 0; display: flex; align-items: center; gap: 10px; background: #0F1713; border: 1px solid #2C3D35; border-radius: 16px; padding: 10px 14px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5)">
+<div style="width: 32px; height: 32px; border-radius: 10px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.3A6 6 0 1 0 5 15a4 4 0 0 0 1 8h12a5 5 0 0 0 0-10z"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 13px; font-weight: 600">Backup done</span><span style="font-size: 11px; color: #9DB0A6">Google Drive</span></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- FEATURE STRIP -->
+<div style="border-top: 1px solid #22302A; border-bottom: 1px solid #22302A; background: #0A110E">
+<div class="strip" style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 22px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 36px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; color: #B7C7BE">
+<span>1-on-1 chats</span><span style="color: #2EB88A" aria-hidden="true">•</span>
+<span>Group rooms</span><span style="color: #2EB88A" aria-hidden="true">•</span>
+<span>Read ticks</span><span style="color: #2EB88A" aria-hidden="true">•</span>
+<span>App Lock</span><span style="color: #2EB88A" aria-hidden="true">•</span>
+<span>Drive backup</span><span style="color: #2EB88A" aria-hidden="true">•</span>
+<span>24h Status</span>
+</div>
+</div>
+
+<!-- FEATURES -->
+<div id="features" class="sec" style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 104px 24px 96px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2EB88A">Features</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.08; letter-spacing: -0.025em">Everything you need to stay in touch</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #9DB0A6">Simple to use, built to be fast, and made to keep your conversations yours.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px">
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Real-time 1-on-1 chats</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Messages arrive instantly in a clean, fast interface.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.9"></path><path d="M16 3.1a4 4 0 0 1 0 7.8"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Group rooms</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Bring friends, family or teams together in one shared conversation.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12l5 5L18 6"></path><path d="M12 16l1 1L22 7"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Seen and read ticks</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Know when your message has been delivered and read.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Delete controls</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Stay in charge of your conversations and remove messages when you need to.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">App Lock</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Keep your chats private by locking the app on your phone.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.3A6 6 0 1 0 5 15a4 4 0 0 0 1 8h12a5 5 0 0 0 0-10z"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Google Drive backup</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Back up your chats to Google Drive so they are safe if you change phones.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #17332A; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2EB88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">24-hour Status</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Share a status update that disappears on its own after a day.</p>
+</div>
+
+</div>
+</div>
+
+<!-- PRIVACY BAND -->
+<div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 24px 96px">
+<div class="band" style="background: #2EB88A; color: #06100C; border-radius: 32px; padding: 64px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.025em">Free to use. Just sign in with Gmail.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 560px">No phone number and no sign-up fee. Download SS Chat, log in with your Gmail account and start chatting with friends right away.</p>
+</div>
+<a class="btn btn-dark" href="https://www.mediafire.com/file/aza3e5ik0mlbcfe/base.apk/file" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #06100C; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 17px 30px; border-radius: 16px">Download app</a>
+</div>
+</div>
+
+<!-- GET ACCESS -->
+<div id="access" class="sec" style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2EB88A">Get started</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.08; letter-spacing: -0.025em">Start chatting in three steps</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px">
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 48px; height: 48px; border-radius: 999px; background: #2EB88A; color: #06100C; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px">1</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Download the app</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Download SS Chat for Android straight from this website and install it on your phone.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 48px; height: 48px; border-radius: 999px; background: #2EB88A; color: #06100C; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px">2</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Sign in with Gmail</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Open the app and log in with your Gmail account. It is free, and no phone number is needed.</p>
+</div>
+
+<div class="card cardbox" style="background: #0F1713; border: 1px solid #22302A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 48px; height: 48px; border-radius: 999px; background: #2EB88A; color: #06100C; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px">3</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Start chatting</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #9DB0A6">Message friends one on one or in groups, share a 24-hour Status and keep your chats backed up on Google Drive.</p>
+</div>
+
+</div>
+<div id="download" class="dl-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px">
+<a class="btn btn-solid" href="https://www.mediafire.com/file/aza3e5ik0mlbcfe/base.apk/file" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #2EB88A; color: #06100C; text-decoration: none; font-weight: 600; font-size: 17px; padding: 18px 32px; border-radius: 16px; box-shadow: 0 12px 32px rgba(46, 184, 138, 0.32)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06100C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 11l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+Download for Android
+</a>
+<span style="font-size: 14px; color: #9DB0A6">Android APK. Allow installs from this source if your phone asks.</span>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div style="border-top: 1px solid #22302A">
+<div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 32px 24px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 14px; color: #9DB0A6">
+<span>© 2026 SS Chat. Chat fast. Stay private. Powered and designed by Surya Sen.</span>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a class="foot-link" href="#features" style="color: #9DB0A6">Features</a>
+<a class="foot-link" href="https://www.mediafire.com/file/aza3e5ik0mlbcfe/base.apk/file" target="_blank" rel="noopener" style="color: #9DB0A6">Download</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>
